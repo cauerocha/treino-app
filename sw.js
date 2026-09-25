@@ -1,5 +1,5 @@
 /* Service worker — deixa o app funcionar sem internet */
-const CACHE = 'treino-v1.1.1';
+const CACHE = 'treino-v1.1.2';
 const ARQUIVOS = [
   './',
   './index.html',

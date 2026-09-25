@@ -418,11 +418,6 @@ function viewAuth() {
       ${!criar && !DB.account ? `<p class="auth-hint">Você ainda não tem conta neste aparelho. Toque em <b>Criar conta</b>.</p>` : ''}
       ${criar && DB.account ? `<p class="auth-hint">Já existe uma conta neste aparelho (<b>${esc(DB.account.email || DB.account.nome)}</b>). Criar outra substitui a atual, mas mantém rotinas e histórico.</p>` : ''}
     </div>
-
-    <p class="auth-foot">
-      Sua conta e seus treinos ficam guardados só neste aparelho.<br>
-      Nada é enviado para a internet.
-    </p>
   </div>`;
 }
 

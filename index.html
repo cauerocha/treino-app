@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+<title>Treino</title>
+<meta name="theme-color" content="#F2F2F7">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Treino">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/icon-180.png">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<main id="screen"></main>
+
+<nav id="tabbar">
+  <span class="tab-pill" aria-hidden="true"></span>
+  <button class="tab on" data-tab="home">
+    <svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg>
+    Início
+  </button>
+  <button class="tab" data-tab="treinos">
+    <svg viewBox="0 0 24 24"><path d="M6.5 7v10M17.5 7v10M3.5 9.5v5M20.5 9.5v5M6.5 12h11"/></svg>
+    Treinos
+  </button>
+  <button class="tab" data-tab="progresso">
+    <svg viewBox="0 0 24 24"><path d="M4 19h16M7 19v-6M12 19V6M17 19v-9"/></svg>
+    Progresso
+  </button>
+  <button class="tab" data-tab="perfil">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20a7.5 7.5 0 0115 0"/></svg>
+    Perfil
+  </button>
+</nav>
+
+<div id="toast" class="toast"></div>
+<div id="modal"></div>
+
+<script src="./app.js"></script>
+</body>
+</html>
